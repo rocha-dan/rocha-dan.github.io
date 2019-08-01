@@ -687,8 +687,12 @@ iframe {
   padding-bottom: 10px;
   padding-left: 15px;
   padding-top: 5px;
-  padding-bottom: 5px;
-  border-left: 4px solid #08aeac;
+  margin-top: -10px;
+  
+  border-bottom: 0.5px solid #08aeac;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+
 }
 .resume-item {
   padding: 15px;
@@ -964,6 +968,194 @@ iframe {
 /* ==========================================================
 ! 12. SECTION: SKILLS
 ========================================================== */
+
+/*========================= About Me =======================*/
+
+.section-title2 h1{
+	position:relative;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #021533;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+.section-title2 h1::before{
+	position:absolute;
+	left:0;
+	bottom:0;
+	content:'';
+  color: #08aeac;
+	width:45px;
+	height:2px;
+}
+.panel-box{
+	width:100%;
+	float:left;
+	height:auto;
+	padding:20px 20px 25px;
+	background:#fff;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	margin:0 0 40px;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.06);
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.06);
+	-ms-box-shadow:0 0 5px rgba(0,0,0,0.06);
+	box-shadow:0 0 5px rgba(0,0,0,0.06);
+}
+.panel-box:hover{
+	-webkit-box-shadow:0px 3px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow:0px 3px 5px rgba(0,0,0,0.3);
+	-ms-box-shadow:0px 3px 5px rgba(0,0,0,0.3);
+	box-shadow:0px 3px 5px rgba(0,0,0,0.3);
+}
+.my-interests.panel-box {
+    margin: 0;
+}
+.basic-info{
+	width:100%;
+	float:left;
+	height:auto;
+}
+.basic-info li{
+	width:100%;
+	float:left;
+	margin:0 0 9px;
+}
+.basic-info li:last-child{
+	margin:0;
+}
+.basic-info li span{
+	float:left;
+	width:100px;
+	height:auto;
+	font-weight:500;
+	font-size:14px;
+}
+.basic-info li span.info{
+	font-weight:400;
+	float:none;
+	width:auto;
+	display:table-cell;
+	font-size:13px;
+}
+.professional-profile .btn.btn-primary{
+	margin-right:10px;
+}
+
+.my-interests ul{
+	width:100%;
+	
+	text-align:center;
+	margin-left:-40px;
+}
+.my-interests ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 19%;
+	
+}
+.my-interests .fa{
+	display:inline-block;
+	font-size:22px;
+	margin:0 0 1px;
+	width:55px;
+	line-height:50px;
+	border:1px solid #dcdcdc;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.my-interests ul li span{
+	text-transform:uppercase;
+	display:block;
+	font-size:10px;
+}
+.my-interests ul li:hover{
+	color:#1cb9c8;
+	cursor:pointer;
+}
+.my-interests ul li:hover .fa{
+	border-color:#1cb9c8;
+}
+
+
+
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
+
+}
+.bar::before{
+  content:  attr(data-skill) '  ';
+  white-space: pre;
+  background-color: #2ccc21;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+
+}
+
+.bar.backend::before{
+  background-color: #2ccc21;
+
+}
+
+
+.bar.tests::before{
+  background-color: #08aeac;
+}
+
+.bar.program::before{
+  background-color: #b31683;
+}
+
+.bar.db::before{
+  background-color: #231aaf;
+}
+
+.bar.server::before{
+  background-color: #e4bc0d;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
+
+
+
 .skills-list {
   padding-left: 0;
   margin-left: 0;
@@ -972,6 +1164,8 @@ iframe {
   position: relative;
   height: 25px;
   margin-bottom: 10px;
+
+	
 }
 .progress > .progress-type {
   position: absolute;
@@ -979,7 +1173,7 @@ iframe {
   font-size: 13px;
   padding: 3px 30px 2px 10px;
   color: #ffffff;
-  background-color: rgba(25, 25, 25, 0.2);
+
 }
 .progress > .progress-completed {
   position: absolute;
@@ -994,7 +1188,7 @@ iframe {
   margin-bottom: 40px;
 }
 .progress-bar {
-  background: #08aeac;
+  background: #0dd013;
   width: 20%;
 }
 .progress-bar-2 {
